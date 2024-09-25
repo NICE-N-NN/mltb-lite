@@ -581,10 +581,3 @@ else:
     a2c_glo = {op: aria2_options[op] for op in aria2c_global if op in aria2_options}
     aria2.set_global_options(a2c_glo)
 
-
-async def get_nzb_options():
-    global nzb_options
-    nzb_options = (await sabnzbd_client.get_config())["config"]["misc"]
-
-
-bot_loop.run_until_complete(get_nzb_options())
