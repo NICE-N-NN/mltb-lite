@@ -36,8 +36,6 @@ from bot import (
     sabnzbd_client,
     bot,
     jd_downloads,
-    nzb_options,
-    get_nzb_options,
     get_qb_options,
 )
 from ..helper.ext_utils.bot_utils import (
